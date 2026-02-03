@@ -255,11 +255,16 @@
       </video>
       -->
       <!-- Your image here -->
-      <img src="static/images/method.jpg" alt="Sixth research result visualization" loading="lazy"/>
+      <img src="static/images/uae_with_lfm.png" alt="Sixth research result visualization" loading="lazy"/>
       <!-- TODO: Replace with your video description -->
       <div class="content has-text-justified is-size-6">
         <p>
-          The proposed method consists of three steps. In the first step, the system is solved with a solver for a small number of points, <i>t<sub>s</sub></i>. In the second step, training is performed using the data points obtained, with a model that employs an MSE loss function, and additional data points are predicted for <i>t<sub>m</sub></i> using the model. In the final step, training is conducted with a model that employs an energy-conserving loss function, and predictions are made for <i>t<sub>p</sub></i>. As a result, the final model gains the capability to make predictions for any <i>t</i>.
+          <strong>Schematic representation of the Uniform Autoencoder (UAE).</strong> 
+            The encoder \( f_\theta \) maps inputs to a uniform latent space \( \mathbf{z} \) via geometric expansion, 
+            while the decoder \( g_\phi \) reconstructs the data. The dashed frame illustrates the subsequent 
+            generative inference stage, where a Latent Flow Matching (LFM) module transforms source noise 
+            \( \mathbf{z}_0 \) into the target latent manifold \( \hat{\mathbf{z}} \) based on the fixed 
+            representations, enabling high-fidelity data synthesis via the frozen decoder.
         </p>
       </div>
     </div>
