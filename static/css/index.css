@@ -625,9 +625,11 @@ code {
   }
   
   .more-works-container {
-    bottom: 2rem;
-    right: 1rem;
-    top: auto;
+    position: fixed; /* Sabit kalması için */
+    top: 1rem;       /* Üstten boşluk */
+    right: 1rem;     /* Sağdan boşluk */
+    bottom: auto;    /* Eski bottom değerini iptal eder */
+    z-index: 1000;
   }
   
   .more-works-btn {
