@@ -667,7 +667,7 @@ code {
   
   .more-works-container {
     position: fixed;
-    bottom: 2rem;
+    bottom: 6rem;
     right: 1rem;
     z-index: 1000;
   }
