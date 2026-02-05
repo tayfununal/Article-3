@@ -642,8 +642,6 @@ code {
     right: -1rem;
     top: calc(100% + 0.5rem);  /* Butonun altından başlar */
     bottom: auto;             /* Eski bottom değerini iptal eder */
-    max-height: 70vh;         /* Çok uzun listelerde ekranın dışına taşmaz */
-    overflow-y: auto;         /* İçerik çoksa kaydırılabilir olur */
   }
   
   .results-carousel .item {
