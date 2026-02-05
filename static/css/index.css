@@ -625,11 +625,9 @@ code {
   }
   
   .more-works-container {
-    position: fixed; /* Sabit kalması için */
-    top: 2rem;       /* Üstten boşluk */
-    right: 1rem;     /* Sağdan boşluk */
-    bottom: auto;    /* Eski bottom değerini iptal eder */
-    z-index: 1000;
+    bottom: 6rem;
+    right: 1rem;
+    top: auto;
   }
   
   .more-works-btn {
@@ -638,12 +636,10 @@ code {
   }
   
   .more-works-dropdown {
-    width: calc(100vw - 2rem); /* Mobilde ekran genişliğine yayılır */
-    right: 0;                 /* Sağ kenara tam hizalanır */
-    top: calc(100% + 0.5rem);  /* Butonun altından başlar */
-    bottom: auto;             /* Eski bottom değerini iptal eder */
-    max-height: 90vh;         /* Çok uzun listelerde ekranın dışına taşmaz */
-    overflow-y: auto;         /* İçerik çoksa kaydırılabilir olur */
+    width: calc(100vw - 2rem);
+    right: -1rem;
+    bottom: calc(100% + 0.5rem);
+    top: auto;
   }
   
   .results-carousel .item {
@@ -670,10 +666,9 @@ code {
   }
   
   .more-works-container {
-    position: fixed; /* Sabit kalması için */
-    top: 2rem;       /* Üstten boşluk */
-    right: 1rem;     /* Sağdan boşluk */
-    bottom: auto;    /* Eski bottom değerini iptal eder */
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
     z-index: 1000;
   }
   
@@ -683,12 +678,11 @@ code {
   }
   
   .more-works-dropdown {
-    width: calc(100vw - 2rem); /* Mobilde ekran genişliğine yayılır */
-    right: 0;                 /* Sağ kenara tam hizalanır */
-    top: calc(100% + 0.5rem);  /* Butonun altından başlar */
-    bottom: auto;             /* Eski bottom değerini iptal eder */
-    max-height: 90vh;         /* Çok uzun listelerde ekranın dışına taşmaz */
-    overflow-y: auto;         /* İçerik çoksa kaydırılabilir olur */
+    position: absolute;
+    bottom: calc(100% + 0.5rem);
+    right: 0;
+    width: calc(100vw - 2rem);
+    max-width: 90vw;
   }
   
   .link-block {
