@@ -639,7 +639,7 @@ code {
   
   .more-works-dropdown {
     width: calc(100vw - 2rem);
-    right: 0;
+    right: -1rem;
     top: calc(100% + 0.5rem);  /* Butonun altından başlar */
     bottom: auto;             /* Eski bottom değerini iptal eder */
     max-height: 70vh;         /* Çok uzun listelerde ekranın dışına taşmaz */
