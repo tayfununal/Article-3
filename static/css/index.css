@@ -765,11 +765,7 @@ a:focus {
 
   border-radius:20px;
 
-  background: linear-gradient(
-      160deg,
-      #ffffff,
-      #f4f7fb
-  );
+  background: rgb(226, 232, 240);
 
   border:1px solid rgba(0,0,0,0.08);
 
