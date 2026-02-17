@@ -764,11 +764,11 @@ a:focus {
   
   border-radius: 24px; /* Biraz daha yumuşak köşeler */
 
-  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
-  border: 1px solid #e2e8f0;
+  background: #e2e8f0; /* Biraz daha belirgin bir gri-mavi */
+  border: 1px solid #cbd5e1; /* Kartın sınırlarını belirleyen kenarlık */
   box-shadow: 
-      0 20px 25px -5px rgba(0, 0, 0, 0.05),
-      inset 0 0 15px rgba(59, 130, 246, 0.05); /* Çok hafif mavi iç ışık */
+      0 10px 15px -3px rgba(0, 0, 0, 0.05), 
+      0 4px 6px -2px rgba(0, 0, 0, 0.03);
 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
