@@ -794,8 +794,12 @@ a:focus {
   letter-spacing:.8px;
   text-transform:uppercase;
   color:#111;
-  margin-bottom:10px;
   font-weight:600;
+
+  /* TAM ortalama */
+  width:100%;
+  text-align:center;
+  margin:0 auto 8px auto;
 }
 
 .analytics-card img{
