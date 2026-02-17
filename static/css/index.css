@@ -752,59 +752,71 @@ a:focus {
 /* ty */
 .analytics-card {
   width: 100%;
-  max-width: 260px; /* Sabit genişlik yerine max-width daha güvenli */
-  min-height: 140px;
-  margin: 40px auto;
+  max-width: 280px;
+  height: 150px;
+  margin: 50px auto;
   padding: 24px;
 
+  /* İçerik Hizalama */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+
+  /* Köşe Yapısı */
+  border-radius: 28px; /* Daha modern ve yumuşak bir kavis */
+
+  /* Renk ve Doku */
+  background: rgb(226, 232, 240);
   
-  border-radius: 24px; /* Biraz daha yumuşak köşeler */
+  /* Cam Efekti Veren İnce Kenarlık */
+  border: 1px solid rgba(255, 255, 255, 0.5);
 
-  background: #e2e8f0; /* Biraz daha belirgin bir gri-mavi */
-  border: 1px solid #cbd5e1; /* Kartın sınırlarını belirleyen kenarlık */
+  /* Modern Gölgelendirme (Soft Shadow) */
   box-shadow: 
-      0 10px 15px -3px rgba(0, 0, 0, 0.05), 
-      0 4px 6px -2px rgba(0, 0, 0, 0.03);
+    0 15px 35px -5px rgba(0, 0, 0, 0.08),  /* Ana dış gölge */
+    0 8px 15px -8px rgba(0, 0, 0, 0.06),   /* Destekleyici gölge */
+    inset 0 2px 4px rgba(255, 255, 255, 0.8); /* Üstten gelen iç ışık */
 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
+  transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 .analytics-card:hover {
-  transform: translateY(-5px);
-  background: #ffffff; /* Hoverda hafif aydınlanma */
+  transform: translateY(-8px) scale(1.02);
+  background: rgb(215, 225, 235); /* Çok hafif bir derinleşme */
   box-shadow: 
-    0 20px 35px -10px rgba(0, 0, 0, 0.1),
-    0 12px 15px -8px rgba(0, 0, 0, 0.08);
+    0 25px 50px -12px rgba(0, 0, 0, 0.15),
+    inset 0 2px 4px rgba(255, 255, 255, 0.9);
 }
 
 .analytics-title {
-  font-size: 12px;
-  letter-spacing: 1.2px;
+  font-size: 11px;
+  letter-spacing: 1.8px;
   text-transform: uppercase;
-  color: #64748b; /* Daha modern bir yardımcı renk */
+  color: #475569; /* Slate 600 - Gözü yormayan modern gri-siyah */
   font-weight: 700;
-  margin-bottom: 8px;
-  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
-/* Sayaç değeri için yeni bir sınıf (opsiyonel) */
+/* Sayaç Metni İçin Ekstra Stil */
 .analytics-value {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 800;
   color: #1e293b;
-  line-height: 1;
+  margin: 5px 0;
 }
 
 .analytics-card img {
-  width: 120px; /* Görseli biraz dengeledik */
+  width: 140px;
   height: auto;
-  margin-top: 10px;
-  opacity: 0.9;
+  margin-top: 4px;
+  /* Resmin kartla bütünleşmesini sağlar */
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.06));
 }
 /* ty */
 
